@@ -21,7 +21,7 @@ public class HelloApplication {
         public String hello(@PathVariable("firstName") String firstName, @PathVariable("lastName") String lastName){
             return String.format("Hello %s %s", firstName,lastName);
         }    
-            
+        //insersion sin atributos en GetMapping    
         @GetMapping()
         public String hello2(@RequestParam("firstName") String firstName, @RequestParam("lastName") String lastName){
             return "hello" + firstName+" "+lastName;
